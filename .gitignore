@@ -1,0 +1,31 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/utils/__pycache__/
+backend/models/__pycache__/
+backend/models/saved_model.pkl
+backend/models/saved_vectorizer.pkl
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Data
+backend/data/*.csv
+backend/data/*.json
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/settings.json

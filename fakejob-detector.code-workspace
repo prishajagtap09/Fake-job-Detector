@@ -1,0 +1,47 @@
+{
+  "folders": [
+    { "path": "." }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/backend/venv/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/node_modules": true,
+      "**/.pytest_cache": true
+    },
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.pylance",
+      "dsznajder.es7-react-js-snippets",
+      "bradlc.vscode-tailwindcss",
+      "humao.rest-client",
+      "esbenp.prettier-vscode",
+      "ms-python.autopep8"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "FastAPI Backend",
+        "type": "python",
+        "request": "launch",
+        "module": "uvicorn",
+        "args": ["main:app", "--reload", "--port", "8000"],
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/backend"
+        },
+        "justMyCode": true
+      }
+    ]
+  }
+}
