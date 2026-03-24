@@ -125,15 +125,6 @@ Thresholds:
   0–39  → LEGITIMATE  ✅
   40–69 → SUSPICIOUS  ⚠️
   70+   → SCAM        ❌
-```
-
-
-
-
-
-- Built end-to-end fake job detection system using TF-IDF + Random Forest (scikit-learn), extracting 18+ NLP/structural features with a hybrid rule-penalty scoring engine
-- Designed FastAPI REST backend with 3 input modalities (text, URL scraping, OCR), returning classification, confidence score, and SHAP-style keyword highlights
-- Built React + Tailwind frontend with real-time scam scoring visualization, feature-level explainability panel, and risky keyword highlighting
 
 ---
 
