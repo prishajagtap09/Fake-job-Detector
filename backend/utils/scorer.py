@@ -11,10 +11,9 @@ Formula:
 """
 
 
-# ─────────────────────────────────────────
+
 # Scoring Rules
 # Each rule: (feature_key, threshold, penalty_points, reason_text)
-# ─────────────────────────────────────────
 
 PENALTY_RULES = [
     # (feature_key, condition_fn, points, reason)

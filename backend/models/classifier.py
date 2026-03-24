@@ -15,11 +15,7 @@ MODEL_PATH = Path(__file__).parent / "saved_model.pkl"
 VECTORIZER_PATH = Path(__file__).parent / "saved_vectorizer.pkl"
 
 
-# ─────────────────────────────────────────
-# Training Data
-# Real-world project: Replace this with the Kaggle EMSCAD dataset
-# Dataset: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
-# ─────────────────────────────────────────
+
 
 SAMPLE_TRAINING_DATA = [
     # (text, label)  label: 0=legit, 1=suspicious, 2=scam

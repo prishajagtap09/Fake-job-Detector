@@ -8,9 +8,9 @@ import re
 from typing import Optional
 
 
-# ─────────────────────────────────────────
+
 # Scam Signal Dictionaries
-# ─────────────────────────────────────────
+
 
 URGENCY_PHRASES = [
     "urgent", "urgently", "immediately", "asap", "as soon as possible",
@@ -69,9 +69,9 @@ TRUSTED_PLATFORMS = {
 }
 
 
-# ─────────────────────────────────────────
+
 # Core Feature Extraction
-# ─────────────────────────────────────────
+
 
 def extract_all_features(text: str, metadata: dict = None) -> dict:
     """
@@ -178,9 +178,9 @@ def get_risky_keywords(text: str) -> list:
     return sorted(list(set(found)), key=len, reverse=True)[:15]
 
 
-# ─────────────────────────────────────────
+
 # Helper Functions
-# ─────────────────────────────────────────
+
 
 def _count_matches(text: str, phrase_list: list) -> int:
     """Count how many phrases from the list appear in text."""

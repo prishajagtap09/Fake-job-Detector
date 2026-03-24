@@ -39,9 +39,9 @@ classifier = JobScamClassifier()
 classifier.load_or_train()
 
 
-# ─────────────────────────────────────────
+
 # Request / Response Models
-# ─────────────────────────────────────────
+
 
 class TextRequest(BaseModel):
     text: str
@@ -61,9 +61,9 @@ class AnalysisResponse(BaseModel):
     feature_breakdown: dict     # individual feature values
 
 
-# ─────────────────────────────────────────
+
 # Endpoints
-# ─────────────────────────────────────────
+
 
 @app.get("/")
 def root():

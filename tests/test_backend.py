@@ -12,9 +12,8 @@ from main import app
 client = TestClient(app)
 
 
-# ─────────────────────────────────────────
+
 # Health & Root
-# ─────────────────────────────────────────
 
 def test_root():
     res = client.get("/")
@@ -28,9 +27,9 @@ def test_health():
     assert res.json()["status"] == "ok"
 
 
-# ─────────────────────────────────────────
+
 # Text Analysis
-# ─────────────────────────────────────────
+
 
 SCAM_TEXT = """
 URGENT HIRING! Earn 50,000 per day from home! No experience needed.
@@ -95,18 +94,18 @@ def test_analyze_returns_all_fields():
         assert field in data, f"Missing field: {field}"
 
 
-# ─────────────────────────────────────────
+
 # URL Analysis
-# ─────────────────────────────────────────
+
 
 def test_analyze_invalid_url():
     res = client.post("/analyze/url", json={"url": "not-a-url"})
     assert res.status_code == 400
 
 
-# ─────────────────────────────────────────
+
 # Feature Extractor Unit Tests
-# ─────────────────────────────────────────
+
 
 from utils.feature_extractor import extract_all_features, get_risky_keywords
 from utils.scorer import compute_scam_score
